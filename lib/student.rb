@@ -67,7 +67,7 @@ class Student
       WHERE grade = 9
     SQL
 
-    DB[:conn].execute(sql, 9)
+    DB[:conn].execute(sql)
 
   end
 
@@ -78,7 +78,7 @@ class Student
       WHERE grade < 12
     SQL
 
-    DB[:conn].execute(sql, 12)
+    DB[:conn].execute(sql)
 
   end
 
