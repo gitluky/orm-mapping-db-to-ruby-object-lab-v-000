@@ -10,8 +10,8 @@ class Student
   end
 
   def self.new_from_db(row)
-    new_student = Student.new(row[1], row[2], row[0])
-    new_student
+    binding.pry
+    Student.new(row[1], row[2], row[0])
   end
 
   def self.all
