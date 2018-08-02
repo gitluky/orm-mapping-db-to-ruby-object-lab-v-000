@@ -19,7 +19,7 @@ class Student
       SELECT *
       FROM students
     SQL
-
+    binding.pry
     DB[:conn].execute(sql)
 
   end
