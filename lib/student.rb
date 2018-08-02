@@ -3,14 +3,11 @@ require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
-  def initialize(name, grade, id=nil)
-    @name = name
-    @grade = grade
-    @id = id
-  end
-
   def self.new_from_db(row)
-    Student.new(row[0][1], row[0][2])
+    new_student = Student.new
+    new_student.id = row[0]
+    new_student.name = row[1]
+    new_student_grade = row[2]
   end
 
   def self.all
