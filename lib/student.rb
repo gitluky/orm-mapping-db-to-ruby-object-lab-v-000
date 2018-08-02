@@ -11,9 +11,6 @@ class Student
 
   def self.new_from_db(row)
     Student.new(row[1], row[2], row[0])
-    # new_student.id = row[0]
-    # new_student.name = row[1]
-    # new_student_grade = row[2]
   end
 
   def self.all
